@@ -29,14 +29,14 @@ p {
 
 /* Navigation bar */
 
-.karma-logo {
-    height: 30px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 4em;
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
@@ -75,7 +75,7 @@ li:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 4em;
 }
 
 .learn-more {
@@ -106,22 +106,61 @@ li:hover {
     flex: auto;
 }
 
-
 /* Footer */
 
-.footer {
-    border-top: solid 1px grey;
+.social-media {
+    border-top: solid 1px rgb(211, 211, 211);
+    text-align: center;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .twitter, .facebook, .instagram {
   height: 20px;
   border: solid 1px grey;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 25px;
+  padding: 12px;
   }
+
+#mobility-inc {
+    color: grey;
+    font-size: 0.8em;
+}
+
 
   /* Media queries */
 
+  @media screen and (max-width: 733px) {
+    h1 {
+        width: 6em;
+    }
+    
+    h3 {
+        width: 10em;
+    }
+
+    /* ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    } */
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: baseline;
+    }
+    
+    .icon-devices, .icon-coffee, .icon-refill {
+        width: 100%;
+        text-align: center;
+        padding-top: 2em;
+    }
+  }
 
 
 
