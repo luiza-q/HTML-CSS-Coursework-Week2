@@ -6,14 +6,117 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+h1 {
+    font-size: 3em;
+    margin: 0.3em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0.3em;
+    font-weight: 300;
+}
+
+/* Navigation bar */
+
+.karma-logo {
+    height: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 6em auto repeat(6, 6em);
+    align-items: center;
+}
+
+li:hover {
+    color: #d35400;
+    transition: 0.5s;
+}
+
+.item-1 {
+    justify-self: end;
+}
+
+.item-2 {
+    justify-self: start;
+}
+
+.item-3 {
+    justify-self: center;
+}
+
+/* main - section 1 - Introducing Karma */
+
+.introduction {
+    background-image: url(/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.learn-more {
+    margin: 3em;
+    padding: 1em 2em 1em 2em;
+    background-color: #d35400;
+    border-radius: 10px;
+    border: none;
+}
+
+.learn-more:hover {
+    font-weight: 500;
+    transition: 0.5s
+}
+
+/* section 2 - grid */
+
+.featured {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+/* Footer */
+
+.footer {
+    border-top: solid 1px grey;
+}
+
+.twitter, .facebook, .instagram {
+  height: 20px;
+  border: solid 1px grey;
+  border-radius: 20px;
+  padding: 10px;
+  }
+
+  /* Media queries */
+
+
+
 
 
