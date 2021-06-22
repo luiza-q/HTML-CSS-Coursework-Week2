@@ -18,9 +18,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0.3em;
     font-weight: 300;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 /* Navigation bar */
@@ -91,13 +95,15 @@ li:hover {
 
 .featured {
     text-align: center;
+    padding: 3em;
 }
 
 .icons {
     display: flex;
-    align-items: center;
+    align-content: stretch;
+    align-items: baseline;
     justify-content: space-around;
-    
+    flex: auto;
 }
 
 
